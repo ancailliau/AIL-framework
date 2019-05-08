@@ -93,6 +93,8 @@ Installation Notes
 
 In order to use AIL combined with **ZFS** or **unprivileged LXC** it's necessary to disable Direct I/O in `$AIL_HOME/configs/6382.conf` by changing the value of the directive `use_direct_io_for_flush_and_compaction` to `false`.
 
+The partition hosting `/tmp` needs to be executable, otherwise, installation of `ssdeep`-related Python library will fail.
+
 Python 3 Upgrade
 ------------
 
